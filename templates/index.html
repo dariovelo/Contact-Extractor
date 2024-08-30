@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Info Extractor</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <script>
+      function showLoading() {
+        document.getElementById("loading-overlay").style.display = "flex";
+      }
+
+      function hideLoading() {
+        document.getElementById("loading-overlay").style.display = "none";
+      }
+
+      // Ensure the loading overlay is hidden initially
+      window.onload = hideLoading;
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Info Extractor</h1>
+      <form
+        action="/upload"
+        method="post"
+        enctype="multipart/form-data"
+        onsubmit="showLoading()"
+      >
+        <label for="file">Upload Excel file:</label>
+        <input type="file" id="file" name="file" accept=".xlsx" />
+        <button type="submit">Upload</button>
+      </form>
+      <hr />
+      <form action="/manual" method="post" onsubmit="showLoading()">
+        <label for="urls">Enter URLs (one per line):</label>
+        <textarea id="urls" name="urls" rows="10" cols="30"></textarea>
+        <button type="submit">Submit URLs</button>
+      </form>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+      <div class="spinner"></div>
+    </div>
+  </body>
+</html>

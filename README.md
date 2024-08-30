@@ -2,6 +2,7 @@
 <p align="center">
   Contact Extractor is a web-based tool that extracts contact information, including email addresses and phone numbers, from websites and contact pages.
 </p>
+<img src="https://github.com/dariovelo/Contact-Extractor/blob/main/demo.jpeg" alt="Cards" style="max-width: 50%; height: auto;"/>
 
 <p align="center">
   Key features include:

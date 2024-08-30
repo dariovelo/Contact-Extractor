@@ -1,10 +1,10 @@
-# Contact-Extractor
+<h1 align"center"> Contact-Extractor </h1>
 <p align="center">
   Contact Extractor is a web-based tool that extracts contact information, including email addresses and phone numbers, from websites and contact pages.
 </p>
 
 <p align="center">
-  **Key features include:**
+  Key features include:
 </p>
 
 <ul style="text-align: center;">
